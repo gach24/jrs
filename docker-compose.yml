@@ -26,8 +26,6 @@ services:
       - 'jrs_data:/bitnami/jasperreports'
     depends_on:
       - jasperdb
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
 
   sakiladb:
     image: mariadb:latest
@@ -37,7 +35,7 @@ services:
       - MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=yes
     volumes:
       - 'sakiladb_data:/var/lib/mysql'
-      - './sakila-maria:/docker-entrypoint-initdb.d'
+      - './sakila:/docker-entrypoint-initdb.d'
     ports:
       - '3306:3306'
 

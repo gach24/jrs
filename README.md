@@ -106,8 +106,8 @@ docker compose logs -f sakiladb
 
 ### JasperReports Server
 
-- **URL HTTP**: http://localhost:8080
-- **URL HTTPS**: https://localhost:8443
+- **URL HTTP**: http://localhost:8080/jasperserver/
+- **URL HTTPS**: https://localhost:8443/jasperserver/
 - **Credenciales por defecto**:
   - Usuario: `admin` (configurable en `.env`)
   - Contraseña: `admin` (configurable en `.env`)
